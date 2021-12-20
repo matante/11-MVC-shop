@@ -1,9 +1,11 @@
 <%- include('includes/head.ejs') %>
     <link rel="stylesheet" href="/css/product.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <%- include('includes/navigation.ejs') %>
+    <p>Current shopping cart bill: <span id="sum">0</span></p>
 
     <main>
         <% if (hasProducts) { %>
@@ -18,11 +20,11 @@
                                 alt="A Book">
                         </div>
                         <div class="card__content">
-                            <h2 class="product__price">$19.99</h2>
+                            <h2 class="product__price">$19</h2>
                             <p class="product__description">A very interesting book about so many even more interesting things!</p>
                         </div>
                         <div class="card__actions">
-                            <button class="btn">Add to Cart</button>
+                            <button class="btn" data-value="19">Add to Cart</button>
                         </div>
                     </article>
                 <% } %>
