@@ -20,7 +20,7 @@ exports.getProducts = (req, res, next) => {
   let prods = Product.fetchAll();
   res.render('shop', {
     prods: prods,
-    pageTitle: 'Shop',
+    pageTitle: 'My Shop',
     path: '/',
     hasProducts: prods.length > 0
   });
